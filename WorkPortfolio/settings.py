@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'jobs', #Adding it here because I created a new app file with (python django-admin startapp {name of app})
 ]
 
 MIDDLEWARE = [
