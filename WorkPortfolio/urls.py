@@ -23,4 +23,12 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', jobs.views.home, name='home'),#for it to work i need to create a file, 
     #it was created in templates/jobs/home.html, and import it, done above
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) #after the plus required to show the static file
+    path('jobs/<int:job_id>', jobs.views.detail, name='detail')#path to the job view
+] 
+
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) #after the plus required to show the static file
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) #after the plus required to media file
+
+
+
+

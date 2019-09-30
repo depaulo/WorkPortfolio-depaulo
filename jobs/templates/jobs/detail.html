@@ -40,40 +40,15 @@
 
   <section class="jumbotron text-center">
     <div class="container">
-      <h1 class="jumbotron-heading">Adelson de Paulo Fecundo</h1>
-      <h5 class="jumbotron-heading">Engenheiro Eletricista / Programador</h5>
-      <p class="lead text-muted"> Mestre em Engenharia Elétrica pela Harbin Institute of Technology (HIT), China.  Formado em engenharia elétrica pela faculdade Pitágoras de Ipatinga.</p>
-      <p>
-        <a href="https://www.linkedin.com/in/adelsondepaulo/" class="btn btn-primary my-2">Linkedin Account</a>
-        <a href="mailto:adelsondepaulo@hotmail.com" class="btn btn-primary my-2">E-mail Me</a>
-      </p>
-      <img src="{% static 'Adelson.jpg' %}" height=300></img>
+      <h1 class="jumbotron-heading">Job detail</h1>
+      <p class="jumbotron-heading">{{ job.summary }}</p>
+      <img src="{{job.image.url}}" height=300></img>
+        <p>
+            <a href=" {% url 'home' %} " class="btn btn-primary my-2">Back</a>
+        </p>
     </div>
   </section>
-
-  <div class="album py-5 bg-light">
-    <div class="container">
-      <div class="row">
-        {% for job in jobs.all %}
-        <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-            <img class="card-img-top" src="{{ job.image.url }}">
-                <div class="card-body">
-                    <p class="card-text">{{ job.summary }}</p>
-                    <div class="btn-group">
-                        <a href="{% url 'detail' job.id %}">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Job details</button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
-  </div>
-
-</main>
+ </main>
 
 <footer class="text-muted">
   <div class="container">

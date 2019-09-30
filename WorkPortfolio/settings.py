@@ -121,3 +121,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')#need it to add a static picture
 #also remember to add configuration in urls file, and do python3 manage.py collectstatic
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR #need it to add a media, do python3 manage.py collectstatic
