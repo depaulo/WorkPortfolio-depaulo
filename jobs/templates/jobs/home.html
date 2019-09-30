@@ -53,6 +53,7 @@
 
   <div class="album py-5 bg-light">
     <div class="container">
+    <h3 align="center" class="jumbotron-heading">Experiência</h3>
       <div class="row">
         {% for job in jobs.all %}
         <div class="col-md-4">
@@ -60,7 +61,7 @@
             <img class="card-img-top" src="{{ job.image.url }}">
                 <div class="card-body">
                     <p class="card-text">{{ job.summary }}</p>
-                    <div class="btn-group">
+                    <div style="text-align:right; width:100%; padding:0; class="btn-group">
                         <a href="{% url 'detail' job.id %}">
                         <button type="button" class="btn btn-sm btn-outline-secondary">Job details</button>
                         </a>
@@ -72,6 +73,56 @@
       </div>
     </div>
   </div>
+
+  <div class="album py-5 bg-light">
+        <div class="container">
+        <h3 align="center" class="jumbotron-heading">Historico academico</h3>
+          <div class="row">
+            {% for job in jobs.all %}
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                <img class="card-img-top" src="{{ job.image.url }}">
+                    <div class="card-body">
+                        <p class="card-text">{{ job.summary }}</p>
+                        <div style="text-align:right; width:100%; padding:0; class="btn-group">
+                            <a href="{% url 'detail' job.id %}">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Job details</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+
+      <div class="album py-5 bg-light">
+            <div class="container">
+            <h3 align="center" class="jumbotron-heading">Idiomas</h3>
+                <p align="center" class="lead text-muted"> Inglês (Fluente), Mandarim (Avançado), Russo (Básico).</p>
+            </div>
+          </div>
+
+          <div class="album py-5 bg-light">
+                <div class="container">
+                        <h3 align="center" class="jumbotron-heading">Conquistas e Publicações</h3>
+                        <div class="row mb-3">
+                            <div class="col-1 themed-grid-col">2019</div>
+                            <div class="col-11 themed-grid-col"> <p class="lead" >王艳敏, P. Fecundo Adelson, 于玲, 牛子铭, 英钊. 未建模动态对Buck 变换器滑模控制系统的影响分析。接受出版在自动化学报.
+                                    <br>(Yanmin Wang, P. Fecundo Adelson, Yu Ling, Niu Ziming, Ying Zhao. A influencia de dinâmicas não modeladas no controle por modos deslisantes de conversores buck. Aceito para publicação na Acta Automatica Sinica).</p></div>
+
+                            <div class="col-1 themed-grid-col">2017</div>
+                            <div class="col-11 themed-grid-col"> <p class="lead" >Bolsa de estudo do Chinese Scholarship Council na Harbin Institute of Technology em Harbin, China.</p></div>
+
+                            <div class="col-1 themed-grid-col">2013</div>
+                            <div class="col-11 themed-grid-col"> <p class="lead" >Ciencias sem fronteiras do governo na Northeast Normal University e Harbin Institute of Technology na China.</p></div>
+
+                            <div class="col-1 themed-grid-col">2010</div>
+                            <div class="col-11 themed-grid-col"> <p class="lead" >Programa universidade para todos (PROUNI) na Faculdade Pitágoras de Ipatinga. Ipatinga, Brasil.</p></div>
+                        </div>
+                </div>
+            </div>
 
 </main>
 
