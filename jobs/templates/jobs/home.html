@@ -8,6 +8,12 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="{% static '/css/bootstrap.min.css' %}">
+    <!-- Fontawasome core CSS -->
+<link rel="stylesheet" href="{% static '/css/all.css' %}">
+
+
     <header>
       <div class="collapse bg-dark" id="navbarHeader">
         <div class="container">
@@ -17,11 +23,12 @@
               <p class="text-muted">Eu sou Engenheiro eletricista / programador, com mestrado em Engenharia Eletrica pela Harbin Institute of Technology, atualmente aberto a novas oportunidades, sinta-se livre para me contactar.</p>
             </div>
             <div class="col-sm-5 offset-md-1 py-3">
-              <h4 class="text-white">Contatos</h4>
+            
+              <h4 class="text-white"> Contatos</h4>
               <ul class="list-unstyled">
-                <li><a href="https://www.linkedin.com/in/adelsondepaulo/" class="text-white">LinkeIn: https://www.linkedin.com/in/adelsondepaulo/</a></li>
-                <li><a href="adelsondepaulo@hotmail.com" class="text-white">E:mail: adelsondepaulo@hotmail.com</a></li>
-                <li><p class="text-white">Tel: (11) 9 6287-4012</p></li>
+                <li><a href="https://www.linkedin.com/in/adelsondepaulo/" class="text-white"><i class="fab fa-linkedin"></i> https://www.linkedin.com/in/adelsondepaulo/</a></li>
+                <li><a href="adelsondepaulo@hotmail.com" class="text-white"><i class="far fa-envelope"></i> adelsondepaulo@hotmail.com</a></li>
+                <li><p class="text-white"><i class="fas fa-phone-square-alt"></i> (11) 9 6287-4012</p></li>
               </ul>
             </div>
           </div>
@@ -30,7 +37,7 @@
       <div class="navbar navbar-dark bg-dark box-shadow">
         <div class="container d-flex justify-content-between">
           <a href="#" class="navbar-brand d-flex align-items-center">
-            <strong>Curriculo</strong>
+            <h4><i class="far fa-address-card"></i> Curriculo</h4>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -41,8 +48,7 @@
     
     <title>Adelson de Paulo Fecundo</title>
 
-        <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="{% static '/css/bootstrap.min.css' %}">
+        
     
 
   </head>
@@ -56,11 +62,11 @@
       <h1 class="jumbotron-heading">Adelson de Paulo Fecundo</h1>
       <h5 class="jumbotron-heading">Engenheiro Eletricista / Programador</h5>
       <p class="lead text-muted"> Mestre em Engenharia Elétrica pela Harbin Institute of Technology (HIT), China.  Formado em engenharia elétrica pela faculdade Pitágoras de Ipatinga.</p>
-      <div class="row bg-white border box-shadow align-items-center">
-          <div  align="center" class="col-xs-4 col-md-3 ">
+      <div class="row bg-white box-shadow align-items-center">
+          <div  align="center" class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
         <img src="{% static 'Adelson.jpg'%}"height="300"></img>
           </div>
-          <div  align="left" class="col-xs-6 col-md-4 ">
+          <div  align="left" class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
             <ul>
           <li>Programação(C/C++,C#, java)</li>
           <li>Python (Flask, Django, Anaconda)</li>
@@ -69,7 +75,7 @@
           <li>Matlab, Simulink, AutoCAD e Revit</li>
             </ul>
           </div>
-          <div align="left" class="col-xs-6 col-md-4 ">
+          <div align="left" class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
             <ul>
           <li>Projetos Elétricos e de iluminação (predial e residencial)</li>
           <li>Quadro de cargas</li>
@@ -79,12 +85,11 @@
           </div>
       </div>
       <p>
-        <a href="https://www.linkedin.com/in/adelsondepaulo/" class="btn btn-primary my-2">Linkedin</a>
-        <a href="mailto:adelsondepaulo@hotmail.com" class="btn btn-primary my-2">Me contate no e-mail</a>
+        <a href="https://www.linkedin.com/in/adelsondepaulo/" class="btn btn-primary my-2"><i class="fab fa-linkedin"></i> Linkedin</a>
+        <a href="mailto:adelsondepaulo@hotmail.com" class="btn btn-primary my-2"><i class="fas fa-envelope"></i> E-mail</a>
       </p>      
     </div>
  
-
 
   <div class="jumbotron">
     <div class="container">    
@@ -92,7 +97,7 @@
 
       <div class="row py-4 border bg-light box-shadow align-items-center">
         {% for job in jobs.all %}
-        <div class="col-md-4">
+        <div class="col-xs-12 col-sm-12 col-md-4">
             <div class="card mb-auto box-shadow">
             <img class="card-img-top" src="{{ job.image.url }}">
                 <div class="card-body">
@@ -166,7 +171,7 @@
 <footer class="text-muted">
   <div class="container">
     <p class="float-right">
-      <a href="#">Back to top</a>
+      <a href="#">Back to top <i class="fas fa-arrow-up"></i> </a>
     </p>
     <p>Website made by Adelson using Python/Django, Bootstrap, jquery, popper and Css.</p>
   </div>
