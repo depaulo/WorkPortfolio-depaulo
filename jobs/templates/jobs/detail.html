@@ -7,36 +7,42 @@
     <meta name="description" content="">
     <meta name="author" content="">
     
-  <header>
-    <div class="collapse bg-dark" id="navbarHeader">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-7 col-md-6 py-3">
-            <h4 class="text-white">Sobre mim</h4>
-            <p class="text-muted">Eu sou Engenheiro eletricista / programador, com mestrado em Engenharia Eletrica pela Harbin Institute of Technology, atualmente aberto a novas oportunidades, sinta-se livre para me contactar.</p>
-          </div>
-          <div class="col-sm-5 offset-md-1 py-3">
-            <h4 class="text-white">Contatos</h4>
-            <ul class="list-unstyled">
-              <li><a href="https://www.linkedin.com/in/adelsondepaulo/" class="text-white">LinkeIn: https://www.linkedin.com/in/adelsondepaulo/</a></li>
-              <li><a href="adelsondepaulo@hotmail.com" class="text-white">E:mail: adelsondepaulo@hotmail.com</a></li>
-              <li><p class="text-white">Tel: (11) 9 6287-4012</p></li>
-            </ul>
+    <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="{% static '/css/bootstrap.min.css' %}">
+    <!-- Fontawasome core CSS -->
+<link rel="stylesheet" href="{% static '/css/all.css' %}">
+
+    <header>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-7 col-md-6 py-3">
+              <h4 class="text-white">Sobre mim</h4>
+              <p class="text-muted">Eu sou Engenheiro eletricista / programador, com mestrado em Engenharia Eletrica pela Harbin Institute of Technology, atualmente aberto a novas oportunidades, sinta-se livre para me contactar.</p>
+            </div>
+            <div class="col-sm-5 offset-md-1 py-3">
+            
+              <h4 class="text-white"> Contatos</h4>
+              <ul class="list-unstyled">
+                <li><a href="https://www.linkedin.com/in/adelsondepaulo/" class="text-white"><i class="fab fa-linkedin"></i> https://www.linkedin.com/in/adelsondepaulo/</a></li>
+                <li><a href="adelsondepaulo@hotmail.com" class="text-white"><i class="far fa-envelope"></i> adelsondepaulo@hotmail.com</a></li>
+                <li><p class="text-white"><i class="fas fa-phone-square-alt"></i> (11) 9 6287-4012</p></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="navbar navbar-dark bg-dark box-shadow">
-      <div class="container d-flex justify-content-between">
-        <a href="#" class="navbar-brand d-flex align-items-center">
-          <strong>Curriculo</strong>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <div class="navbar navbar-dark bg-dark box-shadow">
+        <div class="container d-flex justify-content-between">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <h4><i class="far fa-address-card"></i> Curriculo</h4>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
     <title>Adelson de Paulo Fecundo</title>
 
@@ -60,7 +66,7 @@
       </div>
     </div>
     <p>
-            <a href=" {% url 'home' %} " class="btn btn-primary my-2">Back</a>
+            <a href=" {% url 'home' %} " class="btn btn-primary my-2"><i class="fas fa-long-arrow-alt-left"></i> Back</a>
     </p>
   </section>  
         
@@ -70,7 +76,7 @@
 <footer class="text-muted">
   <div class="container">
     <p class="float-right">
-      <a href="#">Back to top</a>
+      <a href="#">Back to top <i class="fas fa-arrow-up"></i> </a>
     </p>
     <p>Website made by Adelson using Python/Django, Bootstrap, jquery, popper and Css.</p>
   </div>
