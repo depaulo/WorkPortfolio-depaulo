@@ -8,6 +8,12 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <style>
+    p.grayText {color: #a5a9ac;}
+    a.grayText {color: #a5a9ac;}
+    </style>
+
+
     <!-- Bootstrap core CSS -->
 <link rel="stylesheet" href="{% static '/css/bootstrap.min.css' %}">
     <!-- Fontawasome core CSS -->
@@ -20,15 +26,15 @@
           <div class="row">
             <div class="col-sm-7 col-md-6 py-3">
               <h4 class="text-white">Sobre mim</h4>
-              <p class="text-muted">Eu sou Engenheiro eletricista / programador, com mestrado em Engenharia Eletrica pela Harbin Institute of Technology, atualmente aberto a novas oportunidades, sinta-se livre para me contactar.</p>
+              <p class="grayText">Eu sou Engenheiro eletricista / programador, com mestrado em Engenharia Eletrica pela Harbin Institute of Technology, atualmente aberto a novas oportunidades, sinta-se livre para me contactar.</p>
             </div>
             <div class="col-sm-5 offset-md-1 py-3">
             
               <h4 class="text-white"> Contatos</h4>
               <ul class="list-unstyled">
-                <li><a href="https://www.linkedin.com/in/adelsondepaulo/" class="text-white"><i class="fab fa-linkedin"></i> https://www.linkedin.com/in/adelsondepaulo/</a></li>
-                <li><a href="adelsondepaulo@hotmail.com" class="text-white"><i class="far fa-envelope"></i> adelsondepaulo@hotmail.com</a></li>
-                <li><p class="text-white"><i class="fas fa-phone-square-alt"></i> (11) 9 6287-4012</p></li>
+                <li><a href="https://www.linkedin.com/in/adelsondepaulo/" class="grayText"><i class="fab fa-linkedin"></i> https://www.linkedin.com/in/adelsondepaulo/</a></li>
+                <li><a href="adelsondepaulo@hotmail.com" class="grayText"><i class="far fa-envelope"></i> adelsondepaulo@hotmail.com</a></li>
+                <li><p class="grayText"><i class="fas fa-phone-square-alt"></i> (11) 9 6287-4012</p></li>
               </ul>
             </div>
           </div>
@@ -62,13 +68,13 @@
       <h1 class="jumbotron-heading">Adelson de Paulo Fecundo</h1>
       <h5 class="jumbotron-heading">Engenheiro Eletricista / Programador</h5>
       <p class="lead text-muted"> Mestre em Engenharia Elétrica pela Harbin Institute of Technology (HIT), China.  Formado em engenharia elétrica pela faculdade Pitágoras de Ipatinga.</p>
-      <div class="row bg-white box-shadow align-items-center">
-          <div  align="center" class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+      <div class="row bg-white border box-shadow align-items-center">
+          <div  align="center" class="col-xs-12 col-sm-12 col-md-12 col-lg-3 py-3">
         <img src="{% static 'Adelson.jpg'%}"height="300"></img>
           </div>
           <div  align="left" class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
             <ul>
-          <li>Programação(C/C++,C#, java)</li>
+          <li>Programação(C,C++,C#, java)</li>
           <li>Python (Flask, Django, Anaconda)</li>
           <li>Microcontroladores (8051, PIC)</li>
           <li>Banco de dados (MySQL, SQLite, MongoDB)</li>
@@ -77,10 +83,11 @@
           </div>
           <div align="left" class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
             <ul>
-          <li>Projetos Elétricos e de iluminação (predial e residencial)</li>
+          <li>Projetos Elétricos e de iluminação(predial e residencial)</li>
           <li>Quadro de cargas</li>
-          <li>Elaboração de diagramas multifilar e unifilar</li>
+          <li>Diagramas multifilar e unifilar</li>
           <li>Automação</li>
+          <li>Circuito fechado de Tv</li>
             </ul>
           </div>
       </div>
@@ -91,8 +98,7 @@
     </div>
  
 
-  <div class="jumbotron">
-    <div class="container">    
+    <div class="container py-4">    
     <h3 align="center" class="jumbotron-heading">Experiência</h3>
 
       <div class="row py-4 border bg-light box-shadow align-items-center">
@@ -114,19 +120,17 @@
       </div>
 
     </div>
-  </div>
 
-  <div class="jumbotron">
-      <div class="container">
+  
+      <div class="container py-4">
       <h3 class="jumbotron-heading text-center">Idiomas</h3>
       <div class="row border py-4 bg-light box-shadow justify-content-center">
           <div class="col-auto lead"> <strong>Inglês</strong> (Fluente), <strong>Mandarim</strong> (Avançado), <strong>Russo</strong> (Básico).</div>
       </div>
       </div>
-  </div>
-
-  <div class="jumbotron">
-    <div class="container">
+  
+ 
+    <div class="container py-4">
             <h3 align="center" class="jumbotron-heading">Historico Academico</h3>
             <div class="row border py-4 bg-light box-shadow">
                 <div align="center" class="col-2 ">2017- 2019</div>
@@ -143,10 +147,10 @@
                                                                       Faculdade Pitágoras de Ipatinga em Ipatinga, Brasil. 2010-2013 e  2015-2016.</p></div>
             </div>
     </div>
-  </div>
 
-  <div class="jumbotron">
-      <div class="container">
+
+  
+      <div class="container py-4">
               <h3 align="center" class="jumbotron-heading">Conquistas e Publicações</h3>
               <div class="row border py-4 bg-light box-shadow">
                   <div class="col-1 ">2019</div>
@@ -163,7 +167,7 @@
                   <div align="left" class="col-11 "> <p class="lead" >Programa universidade para todos (PROUNI) na Faculdade Pitágoras de Ipatinga. Ipatinga, Brasil.</p></div>
               </div>
       </div>
-  </div>
+
 
 </section>
 </main>
@@ -173,7 +177,7 @@
     <p class="float-right">
       <a href="#">Back to top <i class="fas fa-arrow-up"></i> </a>
     </p>
-    <p>Website made by Adelson using Python/Django, Bootstrap, jquery, popper and Css.</p>
+    <p>Website developed by Adelson using Django, Bootstrap, jquery, popper and Css.</p>
   </div>
 </footer>
 <script src="{% static 'jquery-3.4.1.min.js' %}"></script>
